@@ -18,5 +18,14 @@
     </form>
   </div>
   <script src="script.js"></script>
+  <script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.style.display =
+      section.style.display === "none" || section.style.display === ""
+        ? "block"
+        : "none";
+  }
+</script>
 </body>
 </html>
