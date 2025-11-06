@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso - Conhecimentos Geossociais de Capitão de Campos</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #0d47a1;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+    button {
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+    .content {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Curso: Conhecimentos Geossociais do Município de Capitão de Campos</h1>
+  </header>
+
+  <section>
+    <h2>3. História e Formação Territorial</h2>
+    <p>Este módulo apresenta um panorama detalhado da formação histórica, geográfica e social de Capitão de Campos (PI), contextualizando os principais acontecimentos, povos originários e transformações econômicas e culturais que moldaram o município.</p>
+
+    <button onclick="toggleSection('parte1')">📜 3.1 - Primeiros habitantes e registros arqueológicos</button>
+    <div id="parte1" class="content">
+      <p>De acordo com as pesquisas arqueológicas mais recentes, o território do atual Estado do Piauí é habitado por grupos humanos há dezenas de milhares de anos. A ocupação teria iniciado há 50 mil ou mesmo 100 mil anos, segundo datações obtidas em sítios do Parque Nacional Serra da Capivara.</p>
+      <p>Em Capitão de Campos há dois sítios arqueológicos com grafismos rupestres: <strong>Pedra dos Letreiros I</strong> e <strong>Pedra dos Letreiros II</strong>, localizados nas imediações do riacho Jacu. As pinturas apresentam figuras geométricas e mãos humanas em vermelho, típicas da <em>Tradição Geométrica</em>.</p>
+      <p>Destaca-se ainda a proximidade do município em relação ao <strong>Parque Nacional de Sete Cidades</strong>, a menos de 50 km, que também abriga grafismos de até 6.000 anos atrás.</p>
+      <p><strong>Dica FUNVAPI:</strong> Este tipo de conteúdo pode aparecer em questões sobre o <em>patrimônio histórico e arqueológico</em> do município ou sobre as <em>tradições culturais e antigas populações do Piauí</em>.</p>
+    </div>
+
+    <button onclick="toggleSection('parte2')">🏞️ 3.2 - Colonização e ocupação portuguesa</button>
+    <div id="parte2" class="content">
+      <p>Os primeiros séculos de colonização portuguesa no Piauí foram marcados por um povoamento esparso, ligado à criação de gado. O sertão passou a ser ocupado a partir da segunda metade do século XVII, com a formação das frentes pastoris, que garantiam o abastecimento de carne aos engenhos do litoral.</p>
+      <p>Capitão de Campos surgiu nesse contexto, em uma área historicamente ligada à Capitania de São José do Piauí. No século XIX, a pecuária se consolidou como principal atividade econômica, dando origem a freguesias e vilas ao longo dos rios e rotas de tropeiros.</p>
+      <p><strong>Dica FUNVAPI:</strong> A banca costuma cobrar cronologias históricas e marcos econômicos locais, especialmente sobre a formação do território e suas relações com a pecuária e colonização.</p>
+    </div>
+
+    <button onclick="toggleSection('parte3')">🏛️ 3.3 - Formação urbana e emancipação política</button>
+    <div id="parte3" class="content">
+      <p>O município de Capitão de Campos nasceu a partir de fazendas pertencentes a <strong>Jovita de Sousa Barros</strong> e seus descendentes, que doaram lotes para a formação do povoado. Nas primeiras décadas do século XX, destacaram-se as fazendas de <em>Sesoste Manoel de Araújo</em> e <em>Manoel Lopes</em>.</p>
+      <p>A <strong>BR-343</strong> (antiga BR-222) impulsionou o crescimento urbano na década de 1940, com o comércio e serviços se expandindo rapidamente. A elevação a município ocorreu em <strong>30 de novembro de 1956</strong>, sendo instalado oficialmente em <strong>10 de março de 1957</strong>.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Busto_in_Capit%C3%A3o_de_Campos6253.JPG/250px-Busto_in_Capit%C3%A3o_de_Campos6253.JPG" alt="Monumento João Brígida - Praça da Matriz, Capitão de Campos">
+      <p>Na imagem acima, vemos o monumento com busto de <strong>João Brígida</strong>, figura importante da história recente do município.</p>
+      <p><strong>Dica FUNVAPI:</strong> Este tópico pode aparecer em perguntas sobre datas históricas, obras de infraestrutura e agentes locais relevantes na história do município.</p>
+    </div>
+  </section>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display =
+        section.style.display === "none" || section.style.display === ""
+          ? "block"
+          : "none";
+    }
+  </script>
+</body>
+</html>
